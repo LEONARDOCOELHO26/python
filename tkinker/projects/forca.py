@@ -1,5 +1,4 @@
 import random
-from words import words
 from hangman_visual import lives_visual_dict
 import string
 
@@ -57,4 +56,18 @@ def hangman():
 
 
 if __name__ == '__main__':
-    hangman()
+    while True:
+        result = input("escolha a lingua:(es)espanhol,(en) para ingles,(pt-br) para portugues ou digite s para sair")
+        if result == "pt-br":
+            from words_pt import words
+            hangman()
+        elif result == "en":
+            from words_en import words
+            hangman()
+        elif result == "es":
+            from words_es import words
+            hangman()
+        else:
+            break
+        
+    
