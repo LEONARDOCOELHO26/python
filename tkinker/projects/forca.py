@@ -55,6 +55,7 @@ def hangman():
         print('YAY! You guessed the word', word, '!!')
 
 
+
 if __name__ == '__main__':
     while True:
         result = input("escolha a lingua:(es)espanhol,(en) para ingles,(pt-br) para portugues ou digite s para sair")
